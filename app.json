@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "Expo-bug-report",
-    "slug": "Expo-bug-report",
-    "version": "1.0.0",
+    "name": "FarmaBorsa",
+    "slug": "farmaborsa",
+    "version": "16.0.122",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -10,20 +10,39 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "updates": {
-      "fallbackToCacheTimeout": 0
+    "packagerOpts": {
+      "config": "metro.config.js",
+      "sourceExts": [
+        "expo.ts",
+        "expo.tsx",
+        "expo.js",
+        "expo.jsx",
+        "ts",
+        "tsx",
+        "js",
+        "jsx",
+        "json",
+        "wasm",
+        "svg"
+      ]
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "updates": {
+      "fallbackToCacheTimeout": 3500,
+      "checkAutomatically": "ON_ERROR_RECOVERY"
+    },
+    "assetBundlePatterns": ["assets/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.farmaborsa.testflight",
+      "buildNumber": "4.0.70"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "versionCode": 90,
+      "package": "com.farmaborsa.testflight"
     },
     "web": {
       "favicon": "./assets/favicon.png"
